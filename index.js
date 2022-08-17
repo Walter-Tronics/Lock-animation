@@ -1,5 +1,10 @@
+//adding a load event listener to the window object
 window.onload=()=>{
+
+//declaring a boolean variable to check if key is in motion
 let isInMotion = false;
+
+//selecting elements from the DOM
 let key = document.getElementById('key');
 let cont = document.getElementById('case');
 let lockHead = document.getElementById('top');
