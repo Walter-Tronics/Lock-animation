@@ -57,23 +57,47 @@ function keymove(){
         }, 
         8000);
 }
+
+
+//function to return the key from the lock
 function keyReturn(){
+    //calling the function to close the lock
     close();
-    setTimeout( ()=>{
+    //setting a timeout to move the lock back to the original position after 2 seconds
+    setTimeout( 
+        ()=>{
+        //moving the lock back to the original position
         cont.style.transform="translateX(0)";
+        //returning the key to the original position
         key.style.animation="";
-    }, 2000);
+    }, 
+    2000);
 }
+
+
+//adding an event listener to the open lock button
 openLock.addEventListener('click', ()=>{
+    //calling the function to move the key
     keymove();
+    //setting the motion boolean variable to true
     isInMotion = true;
+    //if the key is in motion, then remove the event listener from the open lock button
     if (isInMotion==true) {
+        //removing the event listener from the open lock button
         openLock.removeEventListener('click');
     }
+
 });
+
+
+//adding an event listener to the hide button
 hide.addEventListener('click', ()=>{
+    //hiding the alert message
     notice.style.display="none";
+    //setting a timeout to call the function to return the key from the lock after 2 seconds
+    //call the function after 800 miliseconds
     setTimeout(keyReturn, 800);
+    
 });
 
 }
