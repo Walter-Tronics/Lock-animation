@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #065d35;
+    background: #065d35;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@ section{
     width: 15px;
     height: 15px;
     position: absolute;
-    background-color: #065d35;
+    background: #065d35;
     border-radius: 50%;
     transform: translate(-50%,-50%);
     left: 50%;
@@ -44,7 +44,7 @@ section{
     position: relative;
     width: 70px;
     height: 55%;
-    background-color: #fff;
+    background: #fff;
     border-radius: 5px;
 }
 section#key{
@@ -60,13 +60,11 @@ section#key{
     margin-bottom: 30px;
     animation: '';
 }
-@keyframes rot {
-    100%{transform: rotateX(360deg);}
-}
+@keyframes rot { 100%{transform: rotateX(360deg);} }
 #handle{
     width: 30px;
     height: 34px;
-    background-color: white;
+    background: white;
     border-radius: 50%;
     right: 5%;
     position: absolute;
@@ -76,7 +74,7 @@ section#key{
     position: absolute;
     width: 70px;
     height: 8px;
-    background-color: white;
+    background: white;
     top: 60%;
     border-radius: 10px 0 0 10px;
 }
@@ -84,13 +82,11 @@ section#key{
     width: 5px;
     height: 27px;
     left: 10%;
-    background-color: white;
+    background: white;
     position: absolute;
     border-radius: 50px;
 }
-#head span:nth-child(2){
-    left: 30%;
-}
+#head span:nth-child(2){left: 30%;}
 #head span:nth-child(3){
     left: 50%;
     height: 20px;
@@ -102,7 +98,7 @@ section#key{
     transform: translateX(-50%);
 }
 #btngroup button{
-    background-color: #202124;
+    background: #202124;
     color: white;
     border: none;
     padding: 10px;
@@ -112,9 +108,7 @@ section#key{
     cursor: pointer;
     border-radius: 8px;
 }
-#btngroup button:active{
-    transform: scale(1.1);
-}
+#btngroup button:active{transform: scale(1.1);}
 #alertCont{
     position: absolute;
     left: 0;
@@ -126,7 +120,7 @@ section#key{
 }
 #alert{
     position: absolute;
-    background-color: white;
+    background: white;
     padding: 0 20px 10px 20px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     width: 80%;
@@ -151,7 +145,7 @@ section#key{
 #alert button{
     display: block;
     margin: 20px auto 0 auto;
-    background-color: #065d35;
+    background: #065d35;
     color: white;
     border: none;
     padding: 5px;
