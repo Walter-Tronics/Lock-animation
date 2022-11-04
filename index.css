@@ -11,8 +11,7 @@ body{
     align-items: center;
 }
 main{
-    width: 80%;
-    max-width: 250px;
+    width: min(80%,250px);
     display: flex;
     justify-content: space-between;
 }
